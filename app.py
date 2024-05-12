@@ -4,7 +4,7 @@ import cohere
 app = Flask(__name__)
 
 # Initialize Cohere client
-co = cohere.Client(api_key="8b61t2nqt5WOkLyyjGZ0E80W3dC5h2o6rWBny8u5")  # Use your actual API key here
+co = cohere.Client(api_key=API_KEY)  # Use your actual API key here
 
 @app.route('/send_message', methods=['POST'])
 def send_message():
