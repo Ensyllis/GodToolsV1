@@ -1,0 +1,57 @@
+/* styles.css */
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+#chat-container {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    background: #fff;
+}
+
+#chat-box {
+    flex-grow: 1;
+    overflow-y: scroll;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+#chat-box div {
+    margin-bottom: 10px; /* Adds a 10px gap between each message */
+}
+
+#chat-input {
+    border: none;
+    padding: 10px;
+    width: calc(100% - 90px);
+}
+
+button {
+    width: 80px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+}
+
+#chat-box div {
+    margin-bottom: 10px;
+}
+
+#chat-box a {
+    display: block; 
+    margin-top: 5px;
+    color: blue;   
+    text-decoration: none; 
+}
+
+#chat-box a:hover {
+    text-decoration: underline; 
+}
