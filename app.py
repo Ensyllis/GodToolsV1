@@ -1,10 +1,12 @@
 from flask import Flask, request, jsonify, render_template
 import cohere
+import os
 
 app = Flask(__name__)
 
-# Initialize Cohere client
-co = cohere.Client(api_key=API_KEY)  # Use your actual API key here
+API_KEY = os.environ.get('API_KEY')
+
+co = cohere.Client(api_key=API_KEY) 
 
 @app.route('/send_message', methods=['POST'])
 def send_message():
